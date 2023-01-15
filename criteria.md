@@ -20,10 +20,11 @@ SO THAT my company can compete with other e-commerce companies
 
 ```md
 GIVEN a functional Express.js API
-WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
-THEN I am able to connect to a database using Sequelize
-WHEN I enter schema and seed commands
-THEN a development database is created and is seeded with test data
+<!-- WHEN I add my database name, MySQL username, and MySQL password to an environment variable file -->
+<!-- THEN I am able to connect to a database using Sequelize -->
+<!-- WHEN I enter schema and seed commands -->
+<!-- THEN a development database is created and  -->
+is seeded with test data
 WHEN I enter the command to invoke the application
 THEN my server is started and the Sequelize models are synced to the MySQL database
 WHEN I open API GET routes in Insomnia for categories, products, or tags
@@ -60,9 +61,9 @@ Use the `schema.sql` file in the `db` folder to create your database with MySQL 
 
 Your database should contain the following four models, including the requirements listed for each model:
 
-* `Category`
+<!-- * `Category` -->
 
-  * `id`
+  <!-- * `id`
 
     * Integer.
   
@@ -70,17 +71,17 @@ Your database should contain the following four models, including the requiremen
   
     * Set as primary key.
   
-    * Uses auto increment.
-
+    * Uses auto increment. -->
+<!-- 
   * `category_name`
   
     * String.
   
-    * Doesn't allow null values.
+    * Doesn't allow null values. -->
 
 * `Product`
 
-  * `id`
+  <!-- * `id`
   
     * Integer.
   
@@ -88,21 +89,21 @@ Your database should contain the following four models, including the requiremen
   
     * Set as primary key.
   
-    * Uses auto increment.
+    * Uses auto increment. -->
 
-  * `product_name`
+  <!-- * `product_name`
   
     * String.
   
-    * Doesn't allow null values.
+    * Doesn't allow null values. -->
 
-  * `price`
+  <!-- * `price`
   
     * Decimal.
   
     * Doesn't allow null values.
   
-    * Validates that the value is a decimal.
+    * Validates that the value is a decimal. -->
 
   * `stock`
   
