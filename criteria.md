@@ -79,7 +79,7 @@ Your database should contain the following four models, including the requiremen
   
     * Doesn't allow null values. -->
 
-* `Product`
+<!-- * `Product` -->
 
   <!-- * `id`
   
@@ -105,7 +105,7 @@ Your database should contain the following four models, including the requiremen
   
     * Validates that the value is a decimal. -->
 
-  * `stock`
+  <!-- * `stock`
   
     * Integer.
   
@@ -113,29 +113,29 @@ Your database should contain the following four models, including the requiremen
   
     * Set a default value of `10`.
   
-    * Validates that the value is numeric.
+    * Validates that the value is numeric. -->
 
-  * `category_id`
+  <!-- * `category_id`
   
     * Integer.
   
-    * References the `Category` model's `id`.
+    * References the `Category` model's `id`. -->
 
 * `Tag`
 
-  * `id`
+  <!-- * `id` -->
   
-    * Integer.
+    <!-- * Integer. -->
   
-    * Doesn't allow null values.
+    <!-- * Doesn't allow null values. -->
   
-    * Set as primary key.
+    <!-- * Set as primary key. -->
   
-    * Uses auto increment.
+    <!-- * Uses auto increment. -->
 
-  * `tag_name`
+  <!-- * `tag_name` -->
   
-    * String.
+    <!-- * String. -->
 
 * `ProductTag`
 
