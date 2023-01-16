@@ -61,7 +61,7 @@ Use the `schema.sql` file in the `db` folder to create your database with MySQL 
 
 Your database should contain the following four models, including the requirements listed for each model:
 
-<!-- * `Category` -->
+* `Category`
 
   <!-- * `id`
 
@@ -79,7 +79,7 @@ Your database should contain the following four models, including the requiremen
   
     * Doesn't allow null values. -->
 
-<!-- * `Product` -->
+* `Product`
 
   <!-- * `id`
   
@@ -139,27 +139,27 @@ Your database should contain the following four models, including the requiremen
 
 * `ProductTag`
 
-  * `id`
+  <!-- * `id` -->
 
-    * Integer.
+    <!-- * Integer. -->
 
-    * Doesn't allow null values.
+    <!-- * Doesn't allow null values. -->
 
-    * Set as primary key.
+    <!-- * Set as primary key. -->
 
-    * Uses auto increment.
+    <!-- * Uses auto increment. -->
 
-  * `product_id`
+  <!-- * `product_id` -->
 
-    * Integer.
+    <!-- * Integer. -->
 
-    * References the `Product` model's `id`.
+    <!-- * References the `Product` model's `id`. -->
 
-  * `tag_id`
+  <!-- * `tag_id` -->
 
-    * Integer.
+    <!-- * Integer. -->
 
-    * References the `Tag` model's `id`.
+    <!-- * References the `Tag` model's `id`. -->
 
 ### Associations
 
