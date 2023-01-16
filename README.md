@@ -24,9 +24,11 @@ To install necessary dependencies, run the following commands.
 
 ```npm install``` to install necessary dependencies. 
 
+```npm run env:copy``` to copy .env file remotely.
+
 ```npm run db:sync``` to create the necessary databases.
 
-```npm run db:seed``` to seeds the databases.
+```npm run db:seed``` to seed the databases.
 
 ```npm run watch``` to open server.
 
