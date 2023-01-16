@@ -7,7 +7,14 @@ router.get('/', async (req, res) => {
   // find all categories
   // be sure to include its associated Products
   try {
-    const categoryData = await Category.findAll();
+    const categoryData = await Category.findAll({
+      include: [{
+        model: Product,
+        attributes: [
+          'product_name',
+        ]
+      }]
+    });
     res.json(categoryData);
   } catch (err) {
     console.error(err);
@@ -24,6 +31,11 @@ router.get('/:id', async (req, res) => {
         model: Product,
       }]
     });
+    
+    if (!categoryData){
+      return res.status(404).json({ "message" : "Cannot get-- this id doesn't exist! " });
+    }
+  
     res.json(categoryData);
   } catch (err) {
     console.error(err);
@@ -52,7 +64,7 @@ router.put('/:id', async (req, res) => {
     });
 
     if (!categoryData){
-      return res.status(404).json({ "message" : "No category with this id! " });
+      return res.status(404).json({ "message" : "Cannot update category-- id does not exist! " });
     }
 
     res.status(200).json(categoryData);
@@ -73,7 +85,7 @@ router.delete('/:id', async (req, res) => {
     });
 
     if (!categoryData) {
-      return res.status(404).json({ "message" : "No category with this id! " });
+      return res.status(404).json({ "message" : "Cannot delete-- id does not exist! " });
     }
 
     res.status(200).json(categoryData);
