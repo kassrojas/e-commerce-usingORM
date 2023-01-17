@@ -34,7 +34,7 @@ To install necessary dependencies, run the following commands.
 
 ## Visuals
 
-[Link to video walkthrough](https://drive.google.com/file/d/1sCv53Myp5s-fRzR-Lr8ABkal-p7W95an/view)
+[Link to video walkthrough](https://drive.google.com/file/d/1LtI3oJvrRAKzlJxmcKWezNQGNjCm7uq6/view)
 
 ## License
 
